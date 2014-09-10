@@ -44,7 +44,7 @@ public class Resource {
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			customers = (Customers) jaxbUnmarshaller.unmarshal(customerStream);
 
-			// Populate the Orders
+			// Populate the OrdersService
 			jaxbContext = JAXBContext.newInstance(Orders.class);
 			jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			orders = (Orders) jaxbUnmarshaller.unmarshal(orderStream);

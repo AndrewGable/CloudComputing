@@ -7,17 +7,33 @@ import javax.xml.bind.annotation.XmlElement;
 
 @XmlRootElement(name ="Order")
 public class Order {
-	
-	@XmlElement(name="CustomerID")
+
+    @XmlElement(name="CustomerID")
 	private String customerId;
 	
 	@XmlElement(name="EmployeeID")
 	private String employeeId;
-	
+
 	@XmlElement(name="OrderDate")
 	private Date orderDate;
-	
-	@XmlElement(name="ShipInfo")
+
+    @XmlElement(name="ShipInfo")
 	private ShipInfo shipInfo;
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public Date getOrderDate() {
+        return orderDate;
+    }
+
+    public ShipInfo getShipInfo() {
+        return shipInfo;
+    }
 
 }
